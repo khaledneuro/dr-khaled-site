@@ -356,13 +356,71 @@ export default function Home() {
   )}
 
             {activeSection === "clips" && (
-              <section>
-                <h2 className="text-3xl font-bold">Academic Clips</h2>
-                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected one-minute academic clips, invited talks, teaching excerpts, and conference presentations in neuroradiology and advanced neuroimaging.
-                </p>
-              </section>
-            )}
+  <section>
+    <h2 className="text-3xl font-bold">Academic Clips</h2>
+
+    <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-950 p-6">
+      <h3 className="text-xl font-semibold text-white">
+        Selected Academic Clips
+      </h3>
+
+      <div className="mt-5 space-y-4 text-lg leading-8">
+        <p>
+          <a
+            href="https://youtu.be/HKo81RxGrV0"
+            target="_blank"
+            className="text-cyan-300 hover:underline"
+          >
+            Establishing a New fMRI Service — fMRI Users Forum by NNL, Bergen, Norway
+          </a>
+        </p>
+        <p>
+  <a
+    href="https://youtu.be/uqUhCnmZI1o"
+    target="_blank"
+    className="text-cyan-300 hover:underline"
+  >
+    Making MRS Easy to Interpret — ASFNR, Austin, Texas
+  </a>
+</p>
+<p>
+  <a
+    href="https://youtu.be/iN-DDnyhgJc"
+    target="_blank"
+    className="text-cyan-300 hover:underline"
+  >
+    VBM-Based Volumetry in MRI-Negative Epilepsy — ASFNR, Boston, MA
+  </a>
+</p>
+<p>
+  <a
+    href="https://youtu.be/oGby86hA8-A"
+    target="_blank"
+    className="text-cyan-300 hover:underline"
+  >
+    DBS Planning — World Parkinson’s Day, Kuwait
+  </a>
+</p>
+<p>
+  <a
+    href="https://youtu.be/PCure-7LaWY"
+    target="_blank"
+    className="text-cyan-300 hover:underline"
+  >
+    fMRI/DTI for Presurgical Planning — BSNR Grand Round, UK
+  </a>
+</p>
+      </div>
+    </div>
+
+    <p className="mt-8 max-w-5xl leading-8 text-slate-300">
+      Selected short academic presentations, invited talks, educational
+      discussions, and neuroradiology teaching clips focused on advanced
+      neuroimaging, presurgical planning, functional MRI, AI applications,
+      and translational neuroscience.
+    </p>
+  </section>
+)}
 
             {activeSection === "neuroart" && (
               <section>

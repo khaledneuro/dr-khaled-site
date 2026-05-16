@@ -8,6 +8,7 @@ import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";
 import maturationFig from "../assets/research/maturation.png";
 import apoeFig from "../assets/research/apoe.png";
+import neuroArtHero from "../assets/neuroimaging-art.png";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
@@ -62,11 +63,11 @@ export default function Home() {
                 Over the past several years, I have led the establishment and
                 development of Kuwait’s first dedicated clinical fMRI and DTI
                 service for presurgical planning, building the service from its
-                early stages into a nationally integrated advanced
-                neuroimaging pathway. I remain particularly enthusiastic about
-                supporting neuroradiologists and healthcare institutions
-                interested in establishing, expanding, or optimizing advanced
-                neuroimaging and presurgical planning services.
+                early stages into a nationally integrated advanced neuroimaging
+                pathway. I remain particularly enthusiastic about supporting
+                neuroradiologists and healthcare institutions interested in
+                establishing, expanding, or optimizing advanced neuroimaging and
+                presurgical planning services.
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-300">
@@ -106,129 +107,159 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="mt-12 overflow-hidden rounded-3xl border border-slate-800 shadow-2xl">
+          <Image
+            src={neuroArtHero}
+            alt="Advanced neuroimaging artistic composite"
+            className="h-[360px] w-full object-cover"
+            priority
+          />
+        </div>
+
         {activeSection !== "about" && (
           <div className="mt-12 w-full rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-2xl">
             {activeSection === "research" && (
               <section>
-                <h2 className="text-3xl font-bold">Research Agenda</h2>
+                <h2 className="text-3xl font-bold">
+                  My Current Research Projects
+                </h2>
 
                 <div className="mt-8 space-y-12">
                   {[
-  [
-    fcdFig,
-    "Cortex-Aware Deep Learning for Detection of FCD in Children",
-    "A multimodal T1/FLAIR deep learning framework for subject-level detection of focal cortical dysplasia using cortex-focused preprocessing, asymmetry modeling, and ensemble learning. The project explores AI-assisted identification of subtle cortical abnormalities in pediatric presurgical epilepsy evaluation.",
-  ],
-  [
-    boldFig,
-    "The BOLD Framework for Establishing a Nationwide fMRI Service",
-    "An educational and service-development framework describing the establishment of Kuwait’s first nationwide clinical fMRI service for presurgical planning. The framework addresses infrastructure, protocol optimization, limitations, post-processing, and multidisciplinary communication.",
-  ],
-  [
-    ariaFig,
-    "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
-    "A dual AI workflow for automated ARIA-E segmentation and ARIA-H detection using proxy datasets including WMH and VALDO microbleed datasets. The project supports future monitoring workflows for anti-amyloid therapies.",
-  ],
-  [
-    maturationFig,
-    "Deep Learning Assessment of Pediatric Brain Maturation",
-    "A pilot normative modeling study evaluating whether deep learning can capture meaningful developmental maturation patterns on pediatric MRI and potentially identify atypical neurodevelopmental trajectories.",
-  ],
-  [
-    apoeFig,
-    "ApoE ε4 and Resting-State fMRI Connectivity",
-    "A resting-state fMRI connectomics study using ADNI data demonstrating that ApoE ε4-related dysconnectivity extends beyond the default mode network and prominently involves dorsal attention and somatomotor systems.",
-  ],
-].map(([fig, title, summary], index) => (
-  <div
-    key={index}
-    className="grid gap-8 lg:grid-cols-2 lg:items-center"
-  >
-    <Image
-      src={fig}
-      alt={title as string}
-      className="rounded-2xl border border-slate-800"
-    />
-    <div>
-      <h3 className="text-2xl font-semibold text-cyan-300">
-        {title as string}
-      </h3>
-      <p className="mt-4 leading-8 text-slate-300">
-        {summary as string}
-      </p>
-    </div>
-  </div>
-))}
+                    [
+                      fcdFig,
+                      "Cortex-Aware Deep Learning for Detection of FCD in Children",
+                      "A multimodal T1/FLAIR deep learning framework for subject-level detection of focal cortical dysplasia using cortex-focused preprocessing, asymmetry modeling, and ensemble learning. The project explores AI-assisted identification of subtle cortical abnormalities in pediatric presurgical epilepsy evaluation.",
+                    ],
+                    [
+                      boldFig,
+                      "The BOLD Framework for Establishing a Nationwide fMRI Service",
+                      "An educational and service-development framework describing the establishment of Kuwait’s first nationwide clinical fMRI service for presurgical planning. The framework addresses infrastructure, protocol optimization, limitations, post-processing, and multidisciplinary communication.",
+                    ],
+                    [
+                      ariaFig,
+                      "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
+                      "A dual AI workflow for automated ARIA-E segmentation and ARIA-H detection using proxy datasets including WMH and VALDO microbleed datasets. The project supports future monitoring workflows for anti-amyloid therapies.",
+                    ],
+                    [
+                      maturationFig,
+                      "Deep Learning Assessment of Pediatric Brain Maturation",
+                      "A pilot normative modeling study evaluating whether deep learning can capture meaningful developmental maturation patterns on pediatric MRI and potentially identify atypical neurodevelopmental trajectories.",
+                    ],
+                    [
+                      apoeFig,
+                      "ApoE ε4 and Resting-State fMRI Connectivity",
+                      "A resting-state fMRI connectomics study using ADNI data demonstrating that ApoE ε4-related dysconnectivity extends beyond the default mode network and prominently involves dorsal attention and somatomotor systems.",
+                    ],
+                  ].map(([fig, title, summary], index) => (
+                    <div
+                      key={index}
+                      className="grid gap-8 lg:grid-cols-2 lg:items-center"
+                    >
+                      <Image
+                        src={fig}
+                        alt={title as string}
+                        className="rounded-2xl border border-slate-800"
+                      />
+                      <div>
+                        <h3 className="text-2xl font-semibold text-cyan-300">
+                          {title as string}
+                        </h3>
+                        <p className="mt-4 leading-8 text-slate-300">
+                          {summary as string}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </section>
             )}
 
             {activeSection === "publications" && (
-  <section>
-    <h2 className="text-3xl font-bold">Selected Publications</h2>
+              <section>
+                <h2 className="text-3xl font-bold">Selected Publications</h2>
 
-    <div className="mt-8 space-y-5 text-lg leading-8 text-slate-300">
-      <p>
-        • Resectability issues with head and neck cancer.
-        <span className="text-cyan-300"> AJNR, 2006.</span>
-      </p>
+                <div className="mt-8 space-y-5 text-lg leading-8 text-slate-300">
+                  <p>
+                    • Resectability issues with head and neck cancer.
+                    <span className="text-cyan-300"> AJNR, 2006.</span>
+                  </p>
 
-      <p>
-        • Syringohydromyelia in Chiari I malformation.
-        <span className="text-cyan-300"> AJNR, 2017.</span>
-      </p>
+                  <p>
+                    • Syringohydromyelia in Chiari I malformation.
+                    <span className="text-cyan-300"> AJNR, 2017.</span>
+                  </p>
 
-      <p>
-        • CT of anterior segment eye injuries.
-        <span className="text-cyan-300"> AJR, 2017.</span>
-      </p>
+                  <p>
+                    • CT of anterior segment eye injuries.
+                    <span className="text-cyan-300"> AJR, 2017.</span>
+                  </p>
 
-      <p>
-        • Orbitofrontal dysfunction by fMRI post-COVID.
-        <span className="text-cyan-300"> JAMA Neurology, 2021.</span>
-      </p>
+                  <p>
+                    • Orbitofrontal dysfunction by fMRI post-COVID.
+                    <span className="text-cyan-300">
+                      {" "}
+                      JAMA Neurology, 2021.
+                    </span>
+                  </p>
 
-      <p>
-        • GBCA deposition MRI study.
-        <span className="text-cyan-300"> Clinical Imaging, 2022.</span>
-      </p>
+                  <p>
+                    • GBCA deposition MRI study.
+                    <span className="text-cyan-300">
+                      {" "}
+                      Clinical Imaging, 2022.
+                    </span>
+                  </p>
 
-      <p>
-        • White matter hyperintensities in migraine.
-        <span className="text-cyan-300"> BMC Neurology, 2022.</span>
-      </p>
+                  <p>
+                    • White matter hyperintensities in migraine.
+                    <span className="text-cyan-300">
+                      {" "}
+                      BMC Neurology, 2022.
+                    </span>
+                  </p>
 
-      <p>
-        • MS relapse-related stuttering & Frontal Aslant Tract.
-        <span className="text-cyan-300">
-          {" "}
-          Acta Neurologica Belgica, 2023.
-        </span>
-      </p>
+                  <p>
+                    • MS relapse-related stuttering & Frontal Aslant Tract.
+                    <span className="text-cyan-300">
+                      {" "}
+                      Acta Neurologica Belgica, 2023.
+                    </span>
+                  </p>
 
-      <p>
-        • Neuro-schistosomiasis review.
-        <span className="text-cyan-300">
-          {" "}
-          World Neurosurgery, 2024.
-        </span>
-      </p>
+                  <p>
+                    • Neuro-schistosomiasis review.
+                    <span className="text-cyan-300">
+                      {" "}
+                      World Neurosurgery, 2024.
+                    </span>
+                  </p>
 
-      <p>
-        • Manuscript under review: ApoE-related resting-state fMRI
-        dysconnectivity study.
-      </p>
-    </div>
+                  <p>
+                    • Manuscript under review: ApoE-related resting-state fMRI
+                    dysconnectivity study.
+                  </p>
+                </div>
 
-    <a
-      href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
-      target="_blank"
-      className="mt-10 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-    >
-      View Google Scholar Profile
-    </a>
-  </section>
-)}
+                <a
+                  href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
+                  target="_blank"
+                  className="mt-10 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
+                >
+                  View Google Scholar Profile
+                </a>
+              </section>
+            )}
+
+            {activeSection === "posters" && (
+              <section>
+                <h2 className="text-3xl font-bold">Posters</h2>
+                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+                  Selected scientific posters and conference materials will be
+                  added here.
+                </p>
+              </section>
+            )}
 
             {activeSection === "clips" && (
               <section>
@@ -255,23 +286,23 @@ export default function Home() {
         )}
 
         <div className="mt-8 text-sm text-slate-400">
-  <p>
-    Contact:{" "}
-    <a
-      href="mailto:khaledgad611@gmail.com"
-      className="text-cyan-300 hover:underline"
-    >
-      khaledgad611@gmail.com
-    </a>{" "}
-    (preferred), or{" "}
-    <a
-      href="mailto:khagad@moh.gov.kw"
-      className="text-cyan-300 hover:underline"
-    >
-      khagad@moh.gov.kw
-    </a>
-  </p>
-</div>
+          <p>
+            Contact:{" "}
+            <a
+              href="mailto:khaledgad611@gmail.com"
+              className="text-cyan-300 hover:underline"
+            >
+              khaledgad611@gmail.com
+            </a>{" "}
+            (preferred), or{" "}
+            <a
+              href="mailto:khagad@moh.gov.kw"
+              className="text-cyan-300 hover:underline"
+            >
+              khagad@moh.gov.kw
+            </a>
+          </p>
+        </div>
       </section>
     </main>
   );

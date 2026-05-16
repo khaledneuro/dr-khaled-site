@@ -25,7 +25,7 @@ export default function Home() {
             <Image
               src={profilePic}
               alt="Dr Khaled Gad"
-              className="mb-6 h-40 w-40 rounded-full object-cover object-top ring-4 ring-cyan-300/30"
+              className="mb-6 h-40 w-40 rounded-full object-cover object-[center_2%] ring-4 ring-cyan-300/30"
               priority
             />
 
@@ -353,6 +353,7 @@ export default function Home() {
 
     </div>
   </section>
+  )}
 
             {activeSection === "clips" && (
               <section>

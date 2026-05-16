@@ -91,22 +91,34 @@ export default function Home() {
           </h2>
 
           <p className="mt-8 text-lg leading-9 text-slate-300">
-            My professional journey has been shaped by a long-standing interest
-            in advanced neuroimaging and its direct clinical value in complex
-            neurosciences practice. My work focuses on integrating functional
-            MRI, DTI tractography, MRS, perfusion imaging, and resting-state
-            connectivity into practical decision-making for neuro-oncology,
-            epilepsy surgery, dementia, and presurgical planning.
-          </p>
+  My professional journey has been shaped by a long-standing interest
+  in advanced neuroimaging and its direct clinical value in complex
+  neurosciences practice. Originally from Egypt, where I completed my
+  radiology residency and early neuroradiology training, my academic
+  background later included a neuroradiology fellowship at Johns
+  Hopkins University, neuroimaging research training at Virginia Tech,
+  and an MSc in Advanced Neuroimaging with Distinction from the UCL
+  Queen Square Institute of Neurology. These experiences helped shape
+  my clinical and academic focus on integrating functional MRI, DTI
+  tractography, MRS, perfusion imaging, and resting-state connectivity
+  into practical clinical decision-making for neuro-oncology,
+  epilepsy surgery, dementia, and presurgical planning.
+</p>
 
-          <p className="mt-6 text-lg leading-9 text-slate-300">
-            Over the past several years, I have led the establishment and
-            development of Kuwait’s first dedicated clinical fMRI and DTI
-            service for presurgical planning, building the service from its
-            early stages into a nationally integrated advanced neuroimaging
-            pathway. This work reflects my broader academic interest in bridging
-            clinical neuroradiology, neuroscience, education, and AI-assisted
-            imaging workflows.
+<p className="mt-6 text-lg leading-9 text-slate-300">
+  Over the past several years, I have led the establishment and
+  development of Kuwait’s first dedicated clinical fMRI and DTI
+  service for presurgical planning, building the service from its
+  early stages into a nationally integrated advanced neuroimaging
+  pathway. This work reflects my broader academic interest in bridging
+  clinical neuroradiology, neuroscience, education, and AI-assisted
+  imaging workflows. I also remain particularly enthusiastic about
+  supporting neuroradiologists and healthcare institutions interested
+  in establishing, expanding, or optimizing advanced neuroimaging and
+  presurgical planning services within their own clinical practice
+  environments.
+
+
           </p>
         </div>
       </section>
@@ -277,24 +289,48 @@ export default function Home() {
 </section>
           
       <section id="publications" className="bg-white px-6 py-20 text-slate-950">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold">Selected Publications</h2>
-          <p className="mt-4 max-w-3xl text-slate-600">
-            A curated list of selected publications and academic contributions
-            will be added here.
-          </p>
-        </div>
-      </section>
+  <div className="mx-auto max-w-6xl">
+    <h2 className="text-3xl font-bold">Selected Publications</h2>
 
-      <section id="clips" className="bg-slate-950 px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold">Academic Clips</h2>
-          <p className="mt-4 max-w-3xl text-slate-300">
-            Academic video clips, lectures, and conference presentations will be
-            listed here by title, year, and venue.
-          </p>
-        </div>
-      </section>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Selected academic publications and research outputs in neuroradiology,
+      advanced neuroimaging, functional MRI, and AI-assisted imaging workflows.
+    </p>
+
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="rounded-3xl border border-slate-200 p-6 shadow-sm">
+        <h3 className="text-xl font-semibold">
+          Advanced Neuroimaging and Presurgical Mapping
+        </h3>
+        <p className="mt-3 text-slate-600">
+          Publications and academic work related to functional MRI, DTI
+          tractography, presurgical planning, and clinically integrated
+          neuroimaging workflows.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-slate-200 p-6 shadow-sm">
+        <h3 className="text-xl font-semibold">
+          AI-Assisted Neuroradiology Research
+        </h3>
+        <p className="mt-3 text-slate-600">
+          Research outputs exploring deep learning, segmentation, connectivity
+          analysis, and imaging-based biomarkers in neurological disease.
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-10">
+      <a
+        href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
+        target="_blank"
+        className="inline-block rounded-full bg-slate-950 px-6 py-3 font-semibold text-white hover:bg-slate-800"
+      >
+        View Full Google Scholar Profile
+      </a>
+    </div>
+  </div>
+</section>
 
       <section id="posters" className="bg-white px-6 py-20 text-slate-950">
         <div className="mx-auto max-w-6xl">

@@ -422,17 +422,40 @@ export default function Home() {
   </section>
 )}
 
-            {activeSection === "neuroart" && (
-              <section>
-                <h2 className="text-3xl font-bold">NeuroArt</h2>
-                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  A selected space for NeuroArt Challenge work, combining brain imaging, visual creativity, neuroscience education, and artistic interpretation.
-                </p>
-              </section>
-            )}
-          </div>
-        )}
+           {activeSection === "neuroart" && (
+  <section>
+    <h2 className="text-3xl font-bold">NeuroArt</h2>
 
+    <p className="mt-5 max-w-5xl leading-8 text-slate-300">
+      NeuroArt is a visual exploration of the intersection between
+      neuroscience, neuroradiology, functional imaging, music, and artistic
+      interpretation. Through selected imaging-based compositions and
+      educational visual concepts, this section reflects how advanced
+      neuroimaging can transcend diagnostic boundaries and evolve into a
+      medium of scientific storytelling and creativity.
+    </p>
+
+    <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-950 p-6">
+      <h3 className="text-xl font-semibold text-white">
+        Featured NeuroArt Collection
+      </h3>
+
+      <p className="mt-4 text-lg leading-8 text-slate-300">
+        Imaginary Masterpieces Inspired by Famous Painters’ Art Styles
+      </p>
+
+      <a
+        href="/files/neuroart/Imaginary_Masterpieces_Inspired_by_Famous_Painters_Art_Styles.pdf"
+        target="_blank"
+        className="mt-5 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
+      >
+        View NeuroArt PDF
+      </a>
+    </div>
+  </section>
+)}
+  </div>
+        )}
         <div className="mt-8 text-sm text-slate-400">
           <p>
             Contact:{" "}

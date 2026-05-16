@@ -17,7 +17,7 @@ export default function Home() {
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[360px_1fr] lg:items-start">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-center">
             <p className="mb-5 text-xs uppercase tracking-[0.35em] text-cyan-300">
               Consultant Neuroradiologist
             </p>

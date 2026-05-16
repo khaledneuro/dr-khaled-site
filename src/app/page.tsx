@@ -16,16 +16,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-12 lg:grid-cols-[380px_1fr] lg:items-start">
-          <div>
-            <p className="mb-6 text-sm uppercase tracking-[0.3em] text-cyan-300">
+        <div className="grid gap-12 lg:grid-cols-[360px_1fr] lg:items-start">
+          <div className="flex flex-col items-center lg:items-start">
+            <p className="mb-5 text-xs uppercase tracking-[0.35em] text-cyan-300">
               Consultant Neuroradiologist
             </p>
 
             <Image
               src={profilePic}
               alt="Dr Khaled Gad"
-              className="mb-8 h-44 w-44 rounded-full object-cover ring-4 ring-cyan-300/40"
+              className="mb-6 h-40 w-40 rounded-full object-cover ring-4 ring-cyan-300/30"
               priority
             />
 
@@ -33,11 +33,9 @@ export default function Home() {
               Dr Khaled Gad
             </h1>
 
-            <p className="mt-5 text-lg leading-8 text-slate-300">
-              Advanced and functional neuroimaging consultant focused on
-              presurgical fMRI, DTI tractography, MRS, perfusion imaging,
-              neuro-oncology, epilepsy imaging, dementia, and AI-assisted
-              neuroradiology research.
+            <p className="mt-5 max-w-sm text-lg leading-8 text-slate-300">
+              Advanced neuroimaging, presurgical fMRI, DTI tractography,
+              AI-assisted neuroradiology, and translational neuroscience.
             </p>
           </div>
 
@@ -52,11 +50,11 @@ export default function Home() {
                 interest in advanced neuroimaging and its direct clinical value
                 in complex neurosciences practice. Originally from Egypt, where
                 I completed my radiology residency and early neuroradiology
-                training, my academic background later included a
-                neuroradiology fellowship at Johns Hopkins University,
-                neuroimaging research training at Virginia Tech, and an MSc in
-                Advanced Neuroimaging with Distinction from the UCL Queen
-                Square Institute of Neurology.
+                training, my academic background later included a neuroradiology
+                fellowship at Johns Hopkins University, neuroimaging research
+                training at Virginia Tech, and an MSc in Advanced Neuroimaging
+                with Distinction from the UCL Queen Square Institute of
+                Neurology.
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-300">
@@ -78,32 +76,6 @@ export default function Home() {
                 revealed through advanced imaging.
               </p>
             </section>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
-              {[
-                ["about", "👤", "About"],
-                ["research", "🔬", "Research"],
-                ["publications", "📚", "Publications"],
-                ["posters", "🧾", "Posters"],
-                ["clips", "🎥", "Academic Clips"],
-                ["neuroart", "🎨", "NeuroArt"],
-              ].map(([key, icon, label]) => (
-                <button
-                  key={key}
-                  onClick={() => setActiveSection(key)}
-                  className={`rounded-2xl border p-4 text-center transition ${
-                    activeSection === key
-                      ? "border-cyan-300 bg-slate-900"
-                      : "border-slate-700 hover:border-cyan-300 hover:bg-slate-900"
-                  }`}
-                >
-                  <div className="text-2xl">{icon}</div>
-                  <div className="mt-2 text-sm font-semibold text-cyan-300">
-                    {label}
-                  </div>
-                </button>
-              ))}
-            </div>
           </div>
         </div>
 
@@ -111,9 +83,35 @@ export default function Home() {
           <Image
             src={neuroArtHero}
             alt="Advanced neuroimaging artistic composite"
-            className="h-[360px] w-full object-cover"
+            className="h-[220px] w-full object-cover"
             priority
           />
+        </div>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+          {[
+            ["about", "👤", "About"],
+            ["research", "🔬", "Research"],
+            ["publications", "📚", "Publications"],
+            ["posters", "🧾", "Posters"],
+            ["clips", "🎥", "Academic Clips"],
+            ["neuroart", "🎨", "NeuroArt"],
+          ].map(([key, icon, label]) => (
+            <button
+              key={key}
+              onClick={() => setActiveSection(key)}
+              className={`rounded-2xl border p-4 text-center transition ${
+                activeSection === key
+                  ? "border-cyan-300 bg-slate-900"
+                  : "border-slate-700 hover:border-cyan-300 hover:bg-slate-900"
+              }`}
+            >
+              <div className="text-2xl">{icon}</div>
+              <div className="mt-2 text-sm font-semibold text-cyan-300">
+                {label}
+              </div>
+            </button>
+          ))}
         </div>
 
         {activeSection !== "about" && (
@@ -180,65 +178,15 @@ export default function Home() {
                 <h2 className="text-3xl font-bold">Selected Publications</h2>
 
                 <div className="mt-8 space-y-5 text-lg leading-8 text-slate-300">
-                  <p>
-                    • Resectability issues with head and neck cancer.
-                    <span className="text-cyan-300"> AJNR, 2006.</span>
-                  </p>
-
-                  <p>
-                    • Syringohydromyelia in Chiari I malformation.
-                    <span className="text-cyan-300"> AJNR, 2017.</span>
-                  </p>
-
-                  <p>
-                    • CT of anterior segment eye injuries.
-                    <span className="text-cyan-300"> AJR, 2017.</span>
-                  </p>
-
-                  <p>
-                    • Orbitofrontal dysfunction by fMRI post-COVID.
-                    <span className="text-cyan-300">
-                      {" "}
-                      JAMA Neurology, 2021.
-                    </span>
-                  </p>
-
-                  <p>
-                    • GBCA deposition MRI study.
-                    <span className="text-cyan-300">
-                      {" "}
-                      Clinical Imaging, 2022.
-                    </span>
-                  </p>
-
-                  <p>
-                    • White matter hyperintensities in migraine.
-                    <span className="text-cyan-300">
-                      {" "}
-                      BMC Neurology, 2022.
-                    </span>
-                  </p>
-
-                  <p>
-                    • MS relapse-related stuttering & Frontal Aslant Tract.
-                    <span className="text-cyan-300">
-                      {" "}
-                      Acta Neurologica Belgica, 2023.
-                    </span>
-                  </p>
-
-                  <p>
-                    • Neuro-schistosomiasis review.
-                    <span className="text-cyan-300">
-                      {" "}
-                      World Neurosurgery, 2024.
-                    </span>
-                  </p>
-
-                  <p>
-                    • Manuscript under review: ApoE-related resting-state fMRI
-                    dysconnectivity study.
-                  </p>
+                  <p>• Resectability issues with head and neck cancer. <span className="text-cyan-300">AJNR, 2006.</span></p>
+                  <p>• Syringohydromyelia in Chiari I malformation. <span className="text-cyan-300">AJNR, 2017.</span></p>
+                  <p>• CT of anterior segment eye injuries. <span className="text-cyan-300">AJR, 2017.</span></p>
+                  <p>• Orbitofrontal dysfunction by fMRI post-COVID. <span className="text-cyan-300">JAMA Neurology, 2021.</span></p>
+                  <p>• GBCA deposition MRI study. <span className="text-cyan-300">Clinical Imaging, 2022.</span></p>
+                  <p>• White matter hyperintensities in migraine. <span className="text-cyan-300">BMC Neurology, 2022.</span></p>
+                  <p>• MS relapse-related stuttering & Frontal Aslant Tract. <span className="text-cyan-300">Acta Neurologica Belgica, 2023.</span></p>
+                  <p>• Neuro-schistosomiasis review. <span className="text-cyan-300">World Neurosurgery, 2024.</span></p>
+                  <p>• Manuscript under review: ApoE-related resting-state fMRI dysconnectivity study.</p>
                 </div>
 
                 <a
@@ -255,8 +203,7 @@ export default function Home() {
               <section>
                 <h2 className="text-3xl font-bold">Posters</h2>
                 <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected scientific posters and conference materials will be
-                  added here.
+                  Selected scientific posters and conference materials will be added here.
                 </p>
               </section>
             )}
@@ -265,9 +212,7 @@ export default function Home() {
               <section>
                 <h2 className="text-3xl font-bold">Academic Clips</h2>
                 <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected one-minute academic clips, invited talks, teaching
-                  excerpts, and conference presentations in neuroradiology and
-                  advanced neuroimaging.
+                  Selected one-minute academic clips, invited talks, teaching excerpts, and conference presentations in neuroradiology and advanced neuroimaging.
                 </p>
               </section>
             )}
@@ -276,9 +221,7 @@ export default function Home() {
               <section>
                 <h2 className="text-3xl font-bold">NeuroArt</h2>
                 <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  A selected space for NeuroArt Challenge work, combining brain
-                  imaging, visual creativity, neuroscience education, and
-                  artistic interpretation.
+                  A selected space for NeuroArt Challenge work, combining brain imaging, visual creativity, neuroscience education, and artistic interpretation.
                 </p>
               </section>
             )}
@@ -288,17 +231,11 @@ export default function Home() {
         <div className="mt-8 text-sm text-slate-400">
           <p>
             Contact:{" "}
-            <a
-              href="mailto:khaledgad611@gmail.com"
-              className="text-cyan-300 hover:underline"
-            >
+            <a href="mailto:khaledgad611@gmail.com" className="text-cyan-300 hover:underline">
               khaledgad611@gmail.com
             </a>{" "}
             (preferred), or{" "}
-            <a
-              href="mailto:khagad@moh.gov.kw"
-              className="text-cyan-300 hover:underline"
-            >
+            <a href="mailto:khagad@moh.gov.kw" className="text-cyan-300 hover:underline">
               khagad@moh.gov.kw
             </a>
           </p>

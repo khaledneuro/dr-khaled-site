@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-12 lg:grid-cols-[280px_1fr] lg:items-start">
+        <div className="grid gap-12 lg:grid-cols-[380px_1fr] lg:items-start">
           <div>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-cyan-300">
               Consultant Neuroradiologist
@@ -28,7 +28,7 @@ export default function Home() {
               priority
             />
 
-            <h1 className="text-5xl font-bold tracking-tight">
+            <h1 className="whitespace-nowrap text-5xl font-bold tracking-tight">
               Dr Khaled Gad
             </h1>
 
@@ -46,7 +46,7 @@ export default function Home() {
                 About Me & My Journey in Neuroradiology
               </h2>
 
-              <p className="mt-6 text-lg leading-9 text-slate-300">
+              <p className="mt-6 text-base leading-8 text-slate-300">
                 My professional journey has been shaped by a long-standing
                 interest in advanced neuroimaging and its direct clinical value
                 in complex neurosciences practice. Originally from Egypt, where
@@ -58,7 +58,7 @@ export default function Home() {
                 Square Institute of Neurology.
               </p>
 
-              <p className="mt-6 text-lg leading-9 text-slate-300">
+              <p className="mt-5 text-base leading-8 text-slate-300">
                 Over the past several years, I have led the establishment and
                 development of Kuwait’s first dedicated clinical fMRI and DTI
                 service for presurgical planning, building the service from its
@@ -69,7 +69,7 @@ export default function Home() {
                 neuroimaging and presurgical planning services.
               </p>
 
-              <p className="mt-6 text-lg leading-9 text-slate-300">
+              <p className="mt-5 text-base leading-8 text-slate-300">
                 Outside medicine, I enjoy piano and visual arts, both of which
                 continue to influence the way I perceive neuroimaging. I often
                 find parallels between musical structure, artistic composition,
@@ -103,128 +103,126 @@ export default function Home() {
                 </button>
               ))}
             </div>
+          </div>
+        </div>
 
-            {activeSection !== "about" && (
-              <div className="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-2xl">
-                {activeSection === "research" && (
-                  <section>
-                    <h2 className="text-3xl font-bold">Research Agenda</h2>
+        {activeSection !== "about" && (
+          <div className="mt-12 w-full rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-2xl">
+            {activeSection === "research" && (
+              <section>
+                <h2 className="text-3xl font-bold">Research Agenda</h2>
 
-                    <div className="mt-8 space-y-12">
-                      {[
-                        [
-                          fcdFig,
-                          "Cortex-Aware Deep Learning for Detection of FCD in Children",
-                        ],
-                        [
-                          boldFig,
-                          "The BOLD Framework for Establishing a Nationwide fMRI Service",
-                        ],
-                        [
-                          ariaFig,
-                          "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
-                        ],
-                        [
-                          maturationFig,
-                          "Deep Learning Assessment of Pediatric Brain Maturation",
-                        ],
-                        [
-                          apoeFig,
-                          "ApoE ε4 and Resting-State fMRI Connectivity",
-                        ],
-                      ].map(([fig, title], index) => (
-                        <div
-                          key={index}
-                          className="grid gap-6 lg:grid-cols-2 lg:items-center"
-                        >
-                          <Image
-                            src={fig}
-                            alt={title as string}
-                            className="rounded-2xl border border-slate-800"
-                          />
-                          <div>
-                            <h3 className="text-xl font-semibold text-cyan-300">
-                              {title as string}
-                            </h3>
-                            <p className="mt-4 leading-8 text-slate-300">
-                              Selected academic project in advanced
-                              neuroimaging, AI-assisted neuroradiology,
-                              presurgical planning, or network neuroscience.
-                            </p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-                )}
-
-                {activeSection === "publications" && (
-                  <section>
-                    <h2 className="text-3xl font-bold">
-                      Selected Publications
-                    </h2>
-                    <p className="mt-5 leading-8 text-slate-300">
-                      Selected academic publications and research outputs in
-                      neuroradiology, advanced neuroimaging, functional MRI,
-                      and AI-assisted imaging workflows.
-                    </p>
-
-                    <a
-                      href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
-                      target="_blank"
-                      className="mt-8 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
+                <div className="mt-8 space-y-12">
+                  {[
+                    [
+                      fcdFig,
+                      "Cortex-Aware Deep Learning for Detection of FCD in Children",
+                    ],
+                    [
+                      boldFig,
+                      "The BOLD Framework for Establishing a Nationwide fMRI Service",
+                    ],
+                    [
+                      ariaFig,
+                      "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
+                    ],
+                    [
+                      maturationFig,
+                      "Deep Learning Assessment of Pediatric Brain Maturation",
+                    ],
+                    [
+                      apoeFig,
+                      "ApoE ε4 and Resting-State fMRI Connectivity",
+                    ],
+                  ].map(([fig, title], index) => (
+                    <div
+                      key={index}
+                      className="grid gap-8 lg:grid-cols-2 lg:items-center"
                     >
-                      View Full Google Scholar Profile
-                    </a>
-                  </section>
-                )}
-
-                {activeSection === "posters" && (
-                  <section>
-                    <h2 className="text-3xl font-bold">Posters</h2>
-                    <p className="mt-5 leading-8 text-slate-300">
-                      Selected scientific posters and conference materials will
-                      be added here.
-                    </p>
-                  </section>
-                )}
-
-                {activeSection === "clips" && (
-                  <section>
-                    <h2 className="text-3xl font-bold">Academic Clips</h2>
-                    <p className="mt-5 leading-8 text-slate-300">
-                      Selected one-minute academic clips, invited talks,
-                      teaching excerpts, and conference presentations in
-                      neuroradiology and advanced neuroimaging.
-                    </p>
-                  </section>
-                )}
-
-                {activeSection === "neuroart" && (
-                  <section>
-                    <h2 className="text-3xl font-bold">NeuroArt</h2>
-                    <p className="mt-5 leading-8 text-slate-300">
-                      A selected space for NeuroArt Challenge work, combining
-                      brain imaging, visual creativity, neuroscience education,
-                      and artistic interpretation.
-                    </p>
-                  </section>
-                )}
-              </div>
+                      <Image
+                        src={fig}
+                        alt={title as string}
+                        className="rounded-2xl border border-slate-800"
+                      />
+                      <div>
+                        <h3 className="text-2xl font-semibold text-cyan-300">
+                          {title as string}
+                        </h3>
+                        <p className="mt-4 leading-8 text-slate-300">
+                          Selected academic project in advanced neuroimaging,
+                          AI-assisted neuroradiology, presurgical planning, or
+                          network neuroscience.
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
             )}
 
-            <div className="mt-8 text-sm text-slate-400">
-              <p>
-                Contact:{" "}
+            {activeSection === "publications" && (
+              <section>
+                <h2 className="text-3xl font-bold">Selected Publications</h2>
+                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+                  Selected academic publications and research outputs in
+                  neuroradiology, advanced neuroimaging, functional MRI, and
+                  AI-assisted imaging workflows.
+                </p>
+
                 <a
-                  href="mailto:khaledgad611@gmail.com"
-                  className="text-cyan-300 hover:underline"
+                  href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
+                  target="_blank"
+                  className="mt-8 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
                 >
-                  khaledgad611@gmail.com
+                  View Full Google Scholar Profile
                 </a>
-              </p>
-            </div>
+              </section>
+            )}
+
+            {activeSection === "posters" && (
+              <section>
+                <h2 className="text-3xl font-bold">Posters</h2>
+                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+                  Selected scientific posters and conference materials will be
+                  added here.
+                </p>
+              </section>
+            )}
+
+            {activeSection === "clips" && (
+              <section>
+                <h2 className="text-3xl font-bold">Academic Clips</h2>
+                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+                  Selected one-minute academic clips, invited talks, teaching
+                  excerpts, and conference presentations in neuroradiology and
+                  advanced neuroimaging.
+                </p>
+              </section>
+            )}
+
+            {activeSection === "neuroart" && (
+              <section>
+                <h2 className="text-3xl font-bold">NeuroArt</h2>
+                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+                  A selected space for NeuroArt Challenge work, combining brain
+                  imaging, visual creativity, neuroscience education, and
+                  artistic interpretation.
+                </p>
+              </section>
+            )}
           </div>
+        )}
+
+        <div className="mt-8 text-sm text-slate-400">
+          <p>
+            Contact:{" "}
+            <a
+              href="mailto:khaledgad611@gmail.com"
+              className="text-cyan-300 hover:underline"
+            >
+              khaledgad611@gmail.com
+            </a>
+          </p>
         </div>
       </section>
     </main>

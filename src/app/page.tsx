@@ -252,16 +252,23 @@ export default function Home() {
         )}
 
         <div className="mt-8 text-sm text-slate-400">
-          <p>
-            Contact:{" "}
-            <a
-              href="mailto:khaledgad611@gmail.com"
-              className="text-cyan-300 hover:underline"
-            >
-              khaledgad611@gmail.com
-            </a>
-          </p>
-        </div>
+  <p>
+    Contact:{" "}
+    <a
+      href="mailto:khaledgad611@gmail.com"
+      className="text-cyan-300 hover:underline"
+    >
+      khaledgad611@gmail.com
+    </a>{" "}
+    (preferred), or{" "}
+    <a
+      href="mailto:khagad@moh.gov.kw"
+      className="text-cyan-300 hover:underline"
+    >
+      khagad@moh.gov.kw
+    </a>
+  </p>
+</div>
       </section>
     </main>
   );

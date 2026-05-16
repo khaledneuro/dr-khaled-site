@@ -232,130 +232,128 @@ export default function Home() {
       </div>
     </div>
 
-    <div <div className="mt-10 space-y-6 text-lg leading-8 text-slate-300">
+    <div className="mt-10 space-y-6 text-lg leading-8 text-slate-300">
 
-  <p>
-    • Khaled Gad (presenting author), A. Fawaz, I. Ismail,
-    L. Alsarraf, F. Dashti, F. Barkhof:
-    Whole Brain Volumetry in Adults with Early-Onset MRI-Negative Epilepsy.
-    American Society of Functional Neuroradiology Meeting,
-    Boston, October 2023.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), A. Fawaz, I. Ismail,
+        L. Alsarraf, F. Dashti, F. Barkhof:
+        Whole Brain Volumetry in Adults with Early-Onset MRI-Negative Epilepsy.
+        American Society of Functional Neuroradiology Meeting,
+        Boston, October 2023.
+      </p>
 
-  <p>
-    • Khaled Gad, L. Alsarraf, F. Dashti, Nawal Akbar,
-    Abrar Hayat:
-    The Changing Trend of Gadolinium Brain Deposition Among Children
-    After Implementing a New Institutional “Macrocyclic Agent-Only” Policy.
-    American Society of Pediatric Neuroradiology,
-    Florida, USA, January 2022.
-  </p>
+      <p>
+        • Khaled Gad, L. Alsarraf, F. Dashti, Nawal Akbar,
+        Abrar Hayat:
+        The Changing Trend of Gadolinium Brain Deposition Among Children
+        After Implementing a New Institutional “Macrocyclic Agent-Only” Policy.
+        American Society of Pediatric Neuroradiology,
+        Florida, USA, January 2022.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Topriceanu,
-    Constantin-Cristian, Sotirios Bisdas:
-    Neuroimaging Correlates of H3K27M-Altered Midline Glioma:
-    A Systematic Review and Meta-analysis.
-    Annual Meeting of the Queen Square Institute of Neurology,
-    London, UK, May 2022.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), Topriceanu,
+        Constantin-Cristian, Sotirios Bisdas:
+        Neuroimaging Correlates of H3K27M-Altered Midline Glioma:
+        A Systematic Review and Meta-analysis.
+        Annual Meeting of the Queen Square Institute of Neurology,
+        London, UK, May 2022.
+      </p>
 
-  <p>
-    • Khaled Gad (invited speaker), David Yousem:
-    Syringohydromyelia in Patients with Chiari I Malformation:
-    A Retrospective Analysis.
-    Presented during the Chiari Syringomyelia Foundation meeting
-    at the Congress of Neurological Surgeons,
-    Boston, MA, October 2017.
-  </p>
+      <p>
+        • Khaled Gad (invited speaker), David Yousem:
+        Syringohydromyelia in Patients with Chiari I Malformation:
+        A Retrospective Analysis.
+        Presented during the Chiari Syringomyelia Foundation meeting
+        at the Congress of Neurological Surgeons,
+        Boston, MA, October 2017.
+      </p>
 
-  <p>
-    • Sara El-Garawany, Khaled Gad (presenting author),
-    Ahmed Anwar, Mohamed El-Beblawy:
-    Diffusion Tensor Imaging in Primary Open Angle Glaucoma.
-    Educational exhibit at the ASHNR Meeting,
-    Las Vegas, NV, 2017.
-  </p>
+      <p>
+        • Sara El-Garawany, Khaled Gad (presenting author),
+        Ahmed Anwar, Mohamed El-Beblawy:
+        Diffusion Tensor Imaging in Primary Open Angle Glaucoma.
+        Educational exhibit at the ASHNR Meeting,
+        Las Vegas, NV, 2017.
+      </p>
 
-  <p>
-    • Imane Yassine, Waleed Eldeeb, Khaled Gad,
-    Yosry Ashour, Ahmed Hosny:
-    Electroencephalographic and Diffusion Tensor Imaging Changes
-    in Idiopathic Epileptic Children.
-    Poster presentation awarded as “Best Abstract”
-    at the 32nd International Epilepsy Congress,
-    Barcelona, Spain, September 2017.
-  </p>
+      <p>
+        • Imane Yassine, Waleed Eldeeb, Khaled Gad,
+        Yosry Ashour, Ahmed Hosny:
+        Electroencephalographic and Diffusion Tensor Imaging Changes
+        in Idiopathic Epileptic Children.
+        Poster presentation awarded as “Best Abstract”
+        at the 32nd International Epilepsy Congress,
+        Barcelona, Spain, September 2017.
+      </p>
 
-  <p>
-    • Sachin Gujar, Khaled Gad, Elcin Zan,
-    Nafi Aygun, James Zinreich:
-    A Step-by-Step Application of Static and Dynamic Multi-Planar
-    Reconstructed CT Images to Reduce FESS Complications.
-    RSNA Meeting,
-    Chicago, IL, November 2016.
-  </p>
+      <p>
+        • Sachin Gujar, Khaled Gad, Elcin Zan,
+        Nafi Aygun, James Zinreich:
+        A Step-by-Step Application of Static and Dynamic Multi-Planar
+        Reconstructed CT Images to Reduce FESS Complications.
+        RSNA Meeting,
+        Chicago, IL, November 2016.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Eric Singman,
-    Rohini Nadgir, David Yousem, Jay Pillai:
-    CT of Anterior Segment Injuries of the Eye Globe.
-    Oral presentation at ASHNR,
-    Washington, DC, September 2016.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), Eric Singman,
+        Rohini Nadgir, David Yousem, Jay Pillai:
+        CT of Anterior Segment Injuries of the Eye Globe.
+        Oral presentation at ASHNR,
+        Washington, DC, September 2016.
+      </p>
 
-  <p>
-    • Merage Ghane, Khaled Gad, Andrew Valdespino,
-    Marika Coffman, John Richey:
-    The Strength of Cerebello-Thalamic Connectivity
-    as a Function of Age in Autism Spectrum Disorders.
-    SNF Meeting,
-    San Diego, CA, 2014.
-  </p>
+      <p>
+        • Merage Ghane, Khaled Gad, Andrew Valdespino,
+        Marika Coffman, John Richey:
+        The Strength of Cerebello-Thalamic Connectivity
+        as a Function of Age in Autism Spectrum Disorders.
+        SNF Meeting,
+        San Diego, CA, 2014.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Magdy Elnesr,
-    Ossama Adly, Mohamed Hamed, Mohamed Habba,
-    David Yousem:
-    Pathological Expansion of the Jaw:
-    A Useful Parameter in Differentiation Between Benign
-    and Malignant Lesions.
-    ASNR Meeting,
-    New York, NY, April 2012.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), Magdy Elnesr,
+        Ossama Adly, Mohamed Hamed, Mohamed Habba,
+        David Yousem:
+        Pathological Expansion of the Jaw:
+        A Useful Parameter in Differentiation Between Benign
+        and Malignant Lesions.
+        ASNR Meeting,
+        New York, NY, April 2012.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Mohamed Ellabban,
-    James Sciubba:
-    Trans-facial Dental Ultrasonography (TFD-US):
-    A New Technique for Assessment of Jaw Cysts.
-    ASNR Meeting,
-    Seattle, WA, June 2011.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), Mohamed Ellabban,
+        James Sciubba:
+        Trans-facial Dental Ultrasonography (TFD-US):
+        A New Technique for Assessment of Jaw Cysts.
+        ASNR Meeting,
+        Seattle, WA, June 2011.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Magdy Elnesr,
-    Ossama Adly, Mohamed Hamed, Mohamed Habba,
-    David Yousem:
-    The Effect of Jaw Lesions on the Neurovascular Canals:
-    An Important Diagnostic Feature on Dental CT.
-    Oral presentation at ESHNR,
-    Vienna, Austria, September 2010.
-  </p>
+      <p>
+        • Khaled Gad (presenting author), Magdy Elnesr,
+        Ossama Adly, Mohamed Hamed, Mohamed Habba,
+        David Yousem:
+        The Effect of Jaw Lesions on the Neurovascular Canals:
+        An Important Diagnostic Feature on Dental CT.
+        Oral presentation at ESHNR,
+        Vienna, Austria, September 2010.
+      </p>
 
-  <p>
-    • Khaled Gad (presenting author), Magdy El-Nesr,
-    Tarek Khalil, Adel Nessim Abu Saif:
-    Transcranial Doppler Ultrasonography in Head Injury.
-    Oral presentation at the ASNR Meeting,
-    San Diego, CA, May 2006.
-  </p>
-
-</div>
+      <p>
+        • Khaled Gad (presenting author), Magdy El-Nesr,
+        Tarek Khalil, Adel Nessim Abu Saif:
+        Transcranial Doppler Ultrasonography in Head Injury.
+        Oral presentation at the ASNR Meeting,
+        San Diego, CA, May 2006.
+      </p>
 
     </div>
   </section>
-)}
+
             {activeSection === "clips" && (
               <section>
                 <h2 className="text-3xl font-bold">Academic Clips</h2>

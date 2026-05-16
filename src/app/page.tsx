@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile.png";
 import fcdFig from "../assets/research/fcd.png";
 import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";
@@ -200,14 +200,68 @@ export default function Home() {
             )}
 
             {activeSection === "posters" && (
-              <section>
-                <h2 className="text-3xl font-bold">Posters</h2>
-                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected scientific posters and conference materials will be added here.
-                </p>
-              </section>
-            )}
+  <section>
+    <h2 className="text-3xl font-bold">
+      Selected Posters & Scientific Presentations
+    </h2>
 
+    <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-950 p-6">
+      <h3 className="text-xl font-semibold text-cyan-300">
+        View Selected Posters
+      </h3>
+
+      <div className="mt-5 space-y-3 text-lg leading-8">
+        {[
+          "Gadolinium deposition ASPNR2022.pdf",
+          "H3K27M QueenSquareSymposium2022 poster.pdf",
+          "MRS_AIinPractice_LEEDS2021.pdf",
+          "Ocular injury ASHNR2016.pdf",
+          "VBM Epilepsy ASFNR2023.pdf",
+          "DTI in Glaucoma ASHNR2017.pdf",
+        ].map((file) => (
+          <p key={file}>
+            <a
+              href={`/files/posters/${file}`}
+              target="_blank"
+              className="text-cyan-300 hover:underline"
+            >
+              {file}
+            </a>
+          </p>
+        ))}
+      </div>
+    </div>
+
+    <div className="mt-10 space-y-6 text-lg leading-8 text-slate-300">
+
+      <p>
+        • Khaled Gad (presenting author), A. Fawaz, I. Ismail,
+        L. Alsarraf, F. Dashti, F. Barkhof:
+        <span className="text-cyan-300">
+          {" "}
+          Whole Brain Volumetry in Adults with Early-Onset MRI-Negative
+          Epilepsy.
+        </span>{" "}
+        American Society of Functional Neuroradiology Meeting,
+        Boston, October 2023.
+      </p>
+
+            <p>
+        • Khaled Gad, L. Alsarraf, F. Dashti, Nawal Akbar,
+        Abrar Hayat:
+        <span className="text-cyan-300">
+          {" "}
+          The Changing Trend of Gadolinium Brain Deposition Among Children
+          After Implementing a New Institutional “Macrocyclic Agent-Only”
+          Policy.
+        </span>{" "}
+        American Society of Pediatric Neuroradiology,
+        Florida, USA, January 2022.
+      </p>
+
+    </div>
+  </section>
+)}
             {activeSection === "clips" && (
               <section>
                 <h2 className="text-3xl font-bold">Academic Clips</h2>

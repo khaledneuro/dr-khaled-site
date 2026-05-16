@@ -151,5 +151,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
-git status
+  }

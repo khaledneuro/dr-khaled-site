@@ -114,48 +114,51 @@ export default function Home() {
 
                 <div className="mt-8 space-y-12">
                   {[
-                    [
-                      fcdFig,
-                      "Cortex-Aware Deep Learning for Detection of FCD in Children",
-                    ],
-                    [
-                      boldFig,
-                      "The BOLD Framework for Establishing a Nationwide fMRI Service",
-                    ],
-                    [
-                      ariaFig,
-                      "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
-                    ],
-                    [
-                      maturationFig,
-                      "Deep Learning Assessment of Pediatric Brain Maturation",
-                    ],
-                    [
-                      apoeFig,
-                      "ApoE ε4 and Resting-State fMRI Connectivity",
-                    ],
-                  ].map(([fig, title], index) => (
-                    <div
-                      key={index}
-                      className="grid gap-8 lg:grid-cols-2 lg:items-center"
-                    >
-                      <Image
-                        src={fig}
-                        alt={title as string}
-                        className="rounded-2xl border border-slate-800"
-                      />
-                      <div>
-                        <h3 className="text-2xl font-semibold text-cyan-300">
-                          {title as string}
-                        </h3>
-                        <p className="mt-4 leading-8 text-slate-300">
-                          Selected academic project in advanced neuroimaging,
-                          AI-assisted neuroradiology, presurgical planning, or
-                          network neuroscience.
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+  [
+    fcdFig,
+    "Cortex-Aware Deep Learning for Detection of FCD in Children",
+    "A multimodal T1/FLAIR deep learning framework for subject-level detection of focal cortical dysplasia using cortex-focused preprocessing, asymmetry modeling, and ensemble learning. The project explores AI-assisted identification of subtle cortical abnormalities in pediatric presurgical epilepsy evaluation.",
+  ],
+  [
+    boldFig,
+    "The BOLD Framework for Establishing a Nationwide fMRI Service",
+    "An educational and service-development framework describing the establishment of Kuwait’s first nationwide clinical fMRI service for presurgical planning. The framework addresses infrastructure, protocol optimization, limitations, post-processing, and multidisciplinary communication.",
+  ],
+  [
+    ariaFig,
+    "Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection",
+    "A dual AI workflow for automated ARIA-E segmentation and ARIA-H detection using proxy datasets including WMH and VALDO microbleed datasets. The project supports future monitoring workflows for anti-amyloid therapies.",
+  ],
+  [
+    maturationFig,
+    "Deep Learning Assessment of Pediatric Brain Maturation",
+    "A pilot normative modeling study evaluating whether deep learning can capture meaningful developmental maturation patterns on pediatric MRI and potentially identify atypical neurodevelopmental trajectories.",
+  ],
+  [
+    apoeFig,
+    "ApoE ε4 and Resting-State fMRI Connectivity",
+    "A resting-state fMRI connectomics study using ADNI data demonstrating that ApoE ε4-related dysconnectivity extends beyond the default mode network and prominently involves dorsal attention and somatomotor systems.",
+  ],
+].map(([fig, title, summary], index) => (
+  <div
+    key={index}
+    className="grid gap-8 lg:grid-cols-2 lg:items-center"
+  >
+    <Image
+      src={fig}
+      alt={title as string}
+      className="rounded-2xl border border-slate-800"
+    />
+    <div>
+      <h3 className="text-2xl font-semibold text-cyan-300">
+        {title as string}
+      </h3>
+      <p className="mt-4 leading-8 text-slate-300">
+        {summary as string}
+      </p>
+    </div>
+  </div>
+))}
                 </div>
               </section>
             )}

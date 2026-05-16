@@ -1,5 +1,10 @@
 import Image from "next/image";
 import profilePic from "../assets/profile.jpg";
+import fcdFig from "../assets/research/fcd.png";
+import boldFig from "../assets/research/bold.png";
+import ariaFig from "../assets/research/aria.png";
+import maturationFig from "../assets/research/maturation.png";
+import apoeFig from "../assets/research/apoe.png";
 
 export default function Home() {
   return (
@@ -138,17 +143,139 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="research" className="bg-slate-950 px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold">Research Agenda</h2>
-          <p className="mt-4 max-w-3xl text-slate-300">
-            Selected ongoing research themes in advanced neuroimaging,
-            presurgical mapping, functional connectivity, AI-assisted
-            neuroradiology, and clinically meaningful imaging biomarkers.
+     <section id="research" className="bg-slate-950 px-6 py-24">
+  <div className="mx-auto max-w-7xl">
+    <h2 className="text-4xl font-bold">Research Agenda</h2>
+
+    <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-300">
+      Selected academic projects focused on advanced neuroimaging,
+      presurgical mapping, pediatric epilepsy, dementia, AI-assisted
+      neuroradiology, and imaging biomarkers.
+    </p>
+
+    <div className="mt-16 space-y-24">
+
+      <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h3 className="text-2xl font-semibold text-cyan-300">
+            Cortex-Aware Deep Learning for Detection of Focal Cortical Dysplasia in Children
+          </h3>
+
+          <p className="mt-5 leading-8 text-slate-300">
+            A multimodal T1/FLAIR deep learning framework for subject-level
+            detection of focal cortical dysplasia using cortex-focused
+            preprocessing, asymmetry modeling, and ensemble learning.
+            The project explores AI-assisted identification of subtle cortical
+            abnormalities in pediatric presurgical epilepsy evaluation.
           </p>
         </div>
-      </section>
 
+        <div>
+          <Image
+            src={fcdFig}
+            alt="FCD ROC Curve"
+            className="rounded-3xl border border-slate-800 shadow-2xl"
+          />
+        </div>
+      </div>
+
+      <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="order-2 lg:order-1">
+          <Image
+            src={boldFig}
+            alt="BOLD framework"
+            className="rounded-3xl border border-slate-800 shadow-2xl"
+          />
+        </div>
+
+        <div className="order-1 lg:order-2">
+          <h3 className="text-2xl font-semibold text-cyan-300">
+            The “BOLD” Framework for Establishing a Nationwide fMRI Service
+          </h3>
+
+          <p className="mt-5 leading-8 text-slate-300">
+            An educational and service-development framework describing
+            the establishment of Kuwait’s first nationwide clinical fMRI
+            service for presurgical planning. The framework addresses
+            infrastructure, protocol optimization, limitations,
+            post-processing, and multidisciplinary communication.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h3 className="text-2xl font-semibold text-cyan-300">
+            Dual-Pipeline Deep Learning for ARIA-E and ARIA-H Detection
+          </h3>
+
+          <p className="mt-5 leading-8 text-slate-300">
+            A dual AI workflow for automated ARIA-E segmentation and
+            ARIA-H detection using proxy datasets including WMH and
+            VALDO microbleed datasets. The project supports future
+            monitoring workflows for anti-amyloid therapies.
+          </p>
+        </div>
+
+        <div>
+          <Image
+            src={ariaFig}
+            alt="ARIA metrics"
+            className="rounded-3xl border border-slate-800 shadow-2xl"
+          />
+        </div>
+      </div>
+
+      <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="order-2 lg:order-1">
+          <Image
+            src={maturationFig}
+            alt="Brain maturation probabilities"
+            className="rounded-3xl border border-slate-800 shadow-2xl"
+          />
+        </div>
+
+        <div className="order-1 lg:order-2">
+          <h3 className="text-2xl font-semibold text-cyan-300">
+            Deep Learning Assessment of Pediatric Brain Maturation
+          </h3>
+
+          <p className="mt-5 leading-8 text-slate-300">
+            A pilot normative modeling study evaluating whether deep
+            learning can capture meaningful developmental maturation
+            patterns on pediatric MRI and potentially identify atypical
+            neurodevelopmental trajectories.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h3 className="text-2xl font-semibold text-cyan-300">
+            Beyond the Default Mode: ApoE ε4 and Resting-State Connectivity
+          </h3>
+
+          <p className="mt-5 leading-8 text-slate-300">
+            A resting-state fMRI connectomics study using ADNI data
+            demonstrating that ApoE ε4-related dysconnectivity extends
+            beyond the default mode network and prominently involves
+            dorsal attention and somatomotor systems.
+          </p>
+        </div>
+
+        <div>
+          <Image
+            src={apoeFig}
+            alt="ApoE connectivity network"
+            className="rounded-3xl border border-slate-800 shadow-2xl"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+          
       <section id="publications" className="bg-white px-6 py-20 text-slate-950">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold">Selected Publications</h2>

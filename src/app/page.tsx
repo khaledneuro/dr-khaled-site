@@ -69,7 +69,7 @@ export default function Home() {
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-300">
-                Outside medicine, I enjoy piano and visual arts, both of which
+                Outside medicine, I play piano and enjoy visual arts, both of which
                 continue to influence the way I perceive neuroimaging. I often
                 find parallels between musical structure, artistic composition,
                 and the spatial and functional organization of the brain
@@ -100,7 +100,7 @@ export default function Home() {
             <button
               key={key}
               onClick={() => setActiveSection(key)}
-              className={`rounded-2xl border p-4 text-center transition ${
+              className={`cursor-pointer rounded-2xl border p-4 text-center transition ${
                 activeSection === key
                   ? "border-cyan-300 bg-slate-900"
                   : "border-slate-700 hover:border-cyan-300 hover:bg-slate-900"

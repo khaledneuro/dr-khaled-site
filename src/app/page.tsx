@@ -161,33 +161,71 @@ export default function Home() {
             )}
 
             {activeSection === "publications" && (
-              <section>
-                <h2 className="text-3xl font-bold">Selected Publications</h2>
-                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected academic publications and research outputs in
-                  neuroradiology, advanced neuroimaging, functional MRI, and
-                  AI-assisted imaging workflows.
-                </p>
+  <section>
+    <h2 className="text-3xl font-bold">Selected Publications</h2>
 
-                <a
-                  href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
-                  target="_blank"
-                  className="mt-8 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-                >
-                  View Full Google Scholar Profile
-                </a>
-              </section>
-            )}
+    <div className="mt-8 space-y-5 text-lg leading-8 text-slate-300">
+      <p>
+        • Resectability issues with head and neck cancer.
+        <span className="text-cyan-300"> AJNR, 2006.</span>
+      </p>
 
-            {activeSection === "posters" && (
-              <section>
-                <h2 className="text-3xl font-bold">Posters</h2>
-                <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-                  Selected scientific posters and conference materials will be
-                  added here.
-                </p>
-              </section>
-            )}
+      <p>
+        • Syringohydromyelia in Chiari I malformation.
+        <span className="text-cyan-300"> AJNR, 2017.</span>
+      </p>
+
+      <p>
+        • CT of anterior segment eye injuries.
+        <span className="text-cyan-300"> AJR, 2017.</span>
+      </p>
+
+      <p>
+        • Orbitofrontal dysfunction by fMRI post-COVID.
+        <span className="text-cyan-300"> JAMA Neurology, 2021.</span>
+      </p>
+
+      <p>
+        • GBCA deposition MRI study.
+        <span className="text-cyan-300"> Clinical Imaging, 2022.</span>
+      </p>
+
+      <p>
+        • White matter hyperintensities in migraine.
+        <span className="text-cyan-300"> BMC Neurology, 2022.</span>
+      </p>
+
+      <p>
+        • MS relapse-related stuttering & Frontal Aslant Tract.
+        <span className="text-cyan-300">
+          {" "}
+          Acta Neurologica Belgica, 2023.
+        </span>
+      </p>
+
+      <p>
+        • Neuro-schistosomiasis review.
+        <span className="text-cyan-300">
+          {" "}
+          World Neurosurgery, 2024.
+        </span>
+      </p>
+
+      <p>
+        • Manuscript under review: ApoE-related resting-state fMRI
+        dysconnectivity study.
+      </p>
+    </div>
+
+    <a
+      href="https://scholar.google.com/citations?user=TL_LNkEAAAAJ&hl=en"
+      target="_blank"
+      className="mt-10 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
+    >
+      View Google Scholar Profile
+    </a>
+  </section>
+)}
 
             {activeSection === "clips" && (
               <section>

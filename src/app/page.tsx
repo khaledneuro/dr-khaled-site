@@ -3,6 +3,41 @@ import profilePic from "../assets/profile.jpg";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+
+  <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="text-lg font-semibold tracking-wide">
+        Dr Khaled Gad
+      </div>
+
+      <div className="flex flex-wrap gap-6 text-sm text-slate-300">
+        <a href="#research" className="hover:text-cyan-300">
+          Research
+        </a>
+
+        <a href="#publications" className="hover:text-cyan-300">
+          Publications
+        </a>
+
+        <a href="#clips" className="hover:text-cyan-300">
+          Academic Clips
+        </a>
+
+        <a href="#posters" className="hover:text-cyan-300">
+          Posters
+        </a>
+
+        <a href="#neuroart" className="hover:text-cyan-300">
+          NeuroArt
+        </a>
+
+        <a href="#statement" className="hover:text-cyan-300">
+          Personal Statement
+        </a>
+      </div>
+    </nav>
+  </header>
+
       <section className="mx-auto max-w-6xl px-6 py-24">
         <p className="mb-6 text-sm uppercase tracking-[0.3em] text-cyan-300">
           Consultant Neuroradiologist
@@ -117,3 +152,4 @@ export default function Home() {
     </main>
   );
 }
+git status

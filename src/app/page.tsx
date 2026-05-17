@@ -374,7 +374,7 @@ export default function Home() {
                               key={i}
                               src={src}
                               alt={`Gallery photo ${number}`}
-                              className="aspect-square w-full rounded-2xl object-cover shadow-md transition duration-300 hover:scale-105"
+                              className="aspect-square w-full rounded-2xl object-contain bg-slate-950 shadow-md transition duration-300 hover:scale-105"
                             />
                           );
                         })}

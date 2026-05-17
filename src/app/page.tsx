@@ -365,7 +365,7 @@ export default function Home() {
                       </p>
 
                       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                        {Array.from({ length: 60 }, (_, i) => {
+                       Array.from({ length: 69 }, (_, i) => {
                           const number = String(i + 1).padStart(2, "0");
                           const src = `/gallery/gallery-${number}.jpeg`;
 

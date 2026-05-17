@@ -308,33 +308,44 @@ export default function Home() {
                       </p>
 
                       <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-950 p-6">
-                        <h3 className="text-xl font-semibold text-white">
-                          Featured NeuroArt Collection
-                        </h3>
+  <h3 className="text-xl font-semibold text-white">
+    Featured NeuroArt Collection
+  </h3>
 
-                        <p className="mt-4 text-base leading-8 text-slate-300 sm:text-lg">
-                          Imaginary Masterpieces Inspired by Famous Painters’
-                          Art Styles
-                        </p>
+  <div className="mt-8 space-y-6">
 
-                        <a
-                          href="/files/neuroart/Imaginary_Masterpieces_Inspired_by_Famous_Painters_Art_Styles.pdf"
-                          target="_blank"
-                          className="mt-5 inline-block rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-                        >
-                          View NeuroArt PDF
-                        </a>
-                        <div className="mt-6">
-  <a
-    href="https://youtu.be/U4k5JFmahVY?si=X4Pu8PoSmVuoPPYL"
-    target="_blank"
-rel="noopener noreferrer"
-    className="text-cyan-300 hover:underline"
-  >
-    fMRI and Musical Creativity — NeuroArt Video
-  </a>
+    <div className="flex flex-col gap-4 rounded-2xl border border-slate-800 p-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="text-xl font-semibold text-cyan-300">
+        NeuroArt Masterpieces
+      </div>
+
+      <a
+        href="/files/neuroart/Imaginary_Masterpieces_Inspired_by_Famous_Painters_Art_Styles.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block rounded-full border border-cyan-300 px-5 py-2 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+      >
+        View PDF
+      </a>
+    </div>
+
+    <div className="flex flex-col gap-4 rounded-2xl border border-slate-800 p-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="text-xl font-semibold text-cyan-300">
+        fMRI and Musical Creativity by Dr Charles Limb
+      </div>
+
+      <a
+        href="https://youtu.be/U4k5JFmahVY?si=X4Pu8PoSmVuoPPYL"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block rounded-full border border-cyan-300 px-5 py-2 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+      >
+        Watch Video
+      </a>
+    </div>
+
+  </div>
 </div>
-                      </div>
                     </section>
                   )}
 

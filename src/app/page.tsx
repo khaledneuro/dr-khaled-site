@@ -324,6 +324,16 @@ export default function Home() {
                         >
                           View NeuroArt PDF
                         </a>
+                        <div className="mt-6">
+  <a
+    href="https://youtu.be/U4k5JFmahVY?si=X4Pu8PoSmVuoPPYL"
+    target="_blank"
+rel="noopener noreferrer"
+    className="text-cyan-300 hover:underline"
+  >
+    fMRI and Musical Creativity — NeuroArt Video
+  </a>
+</div>
                       </div>
                     </section>
                   )}

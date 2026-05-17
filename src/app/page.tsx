@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import profilePic from "../assets/profile-new.png";
+import profilePic from "../assets/profile-new2.jpeg";
 import fcdFig from "../assets/research/fcd.png";
 import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";
@@ -27,11 +27,11 @@ export default function Home() {
             </p>
 
             <Image
-              src={profilePic}
-              alt="Dr Khaled Gad"
-              className="mb-6 h-44 w-44 rounded-full object-cover object-[center_-12px] ring-4 ring-cyan-300/30 sm:h-48 sm:w-48"
-              priority
-            />
+  src={profilePic}
+  alt="Dr Khaled Gad"
+  className="mb-6 w-[320px] rounded-3xl object-cover shadow-2xl"
+  priority
+/>
 
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Dr Khaled Gad
@@ -364,21 +364,21 @@ export default function Home() {
                         activities.
                       </p>
 
-                      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                       Array.from({ length: 69 }, (_, i) => {
-                          const number = String(i + 1).padStart(2, "0");
-                          const src = `/gallery/gallery-${number}.jpeg`;
+                     <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+  {Array.from({ length: 69 }, (_, i) => {
+    const number = String(i + 1).padStart(2, "0");
+    const src = `/gallery/gallery-${number}.jpeg`;
 
-                          return (
-                            <img
-                              key={i}
-                              src={src}
-                              alt={`Gallery photo ${number}`}
-                              className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
-                            />
-                          );
-                        })}
-                      </div>
+    return (
+      <img
+        key={i}
+        src={src}
+        alt={`Gallery photo ${number}`}
+        className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
+      />
+    );
+  })}
+</div>
                     </section>
                   )}
                 </div>

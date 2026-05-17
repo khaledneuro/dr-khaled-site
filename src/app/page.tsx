@@ -364,22 +364,21 @@ export default function Home() {
                         activities.
                       </p>
 
-                     <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-  {Array.from({ length: 56 }, (_, i) => {
+                    <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+  {Array.from({ length: 60 }, (_, i) => {
     const number = String(i + 1).padStart(2, "0");
     const src = `/gallery/gallery-${number}.jpeg`;
 
     return (
-      <div
+      <img
         key={i}
-        className="flex items-center justify-center rounded-2xl bg-slate-950 p-3 shadow-md"
-      >
-        <img
-          src={src}
-          alt={`Gallery photo ${number}`}
-          className="max-h-[420px] w-full rounded-xl object-contain"
-        />
-      </div>
+        src={src}
+        alt={`Gallery photo ${number}`}
+        className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
+      />
+    );
+  })}
+</div>
     );
   })}
 </div>

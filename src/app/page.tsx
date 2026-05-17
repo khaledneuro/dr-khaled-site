@@ -29,7 +29,7 @@ export default function Home() {
             <Image
   src={profilePic}
   alt="Dr Khaled Gad"
-  className="mb-6 w-[320px] rounded-3xl object-cover shadow-2xl"
+ className="mb-6 h-[420px] w-[320px] rounded-3xl object-cover object-top shadow-2xl"
   priority
 />
 

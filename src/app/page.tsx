@@ -364,7 +364,7 @@ export default function Home() {
                         activities.
                       </p>
 
-                     <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                     <div className="mt-10 columns-1 gap-6 sm:columns-2 lg:columns-4">
   {Array.from({ length: 69 }, (_, i) => {
     const number = String(i + 1).padStart(2, "0");
     const src = `/gallery/gallery-${number}.jpeg`;
@@ -374,7 +374,7 @@ export default function Home() {
         key={i}
         src={src}
         alt={`Gallery photo ${number}`}
-        className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
+        className="mb-6 w-full break-inside-avoid rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
       />
     );
   })}
@@ -389,21 +389,25 @@ export default function Home() {
 
         <div className="mt-8 text-sm leading-7 text-slate-400">
           <p>
-            Contact:{" "}
-            <a
-              href="mailto:khaledgad611@gmail.com"
-              className="text-cyan-300 hover:underline"
-            >
-              khaledgad611@gmail.com
-            </a>{" "}
-            (preferred), or{" "}
-            <a
-              href="mailto:khagad@moh.gov.kw"
-              className="text-cyan-300 hover:underline"
-            >
-              khagad@moh.gov.kw
-            </a>
-          </p>
+  Contact:{" "}
+  <a
+    href="mailto:khaledgad611@gmail.com"
+    className="text-cyan-300 hover:underline"
+  >
+    khaledgad611@gmail.com
+  </a>{" "}
+  (preferred)
+</p>
+
+<p className="mt-2">
+  or{" "}
+  <a
+    href="mailto:khagad@moh.gov.kw"
+    className="text-cyan-300 hover:underline"
+  >
+    khagad@moh.gov.kw
+  </a>
+</p>
         </div>
       </section>
     </main>

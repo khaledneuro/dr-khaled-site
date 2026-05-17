@@ -367,6 +367,7 @@ export default function Home() {
                      <div className="mt-10 columns-1 gap-6 sm:columns-2 lg:columns-4">
   {Array.from({ length: 69 }, (_, i) => {
     const number = String(i + 1).padStart(2, "0");
+    if (number === "19") return null;
     const src = `/gallery/gallery-${number}.jpeg`;
 
     return (

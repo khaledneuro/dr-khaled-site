@@ -11,7 +11,7 @@ import apoeFig from "../assets/research/apoe.png";
 import neuroArtHero from "../assets/neuroimaging-art.png";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("");
 
   const toggleSection = (section: string) => {
     setActiveSection(activeSection === section ? "" : section);
@@ -29,7 +29,7 @@ export default function Home() {
             <Image
               src={profilePic}
               alt="Dr Khaled Gad"
-              className="mb-6 h-44 w-44 rounded-full object-cover object-[center_0%] ring-4 ring-cyan-300/30 sm:h-48 sm:w-48"
+              className="mb-6 h-44 w-44 rounded-full object-cover object-[center_-20px] ring-4 ring-cyan-300/30 sm:h-48 sm:w-48"
               priority
             />
 
@@ -92,12 +92,12 @@ export default function Home() {
 
         <div className="mt-8 space-y-4">
           {[
-            ["about", "👤", "About"],
             ["research", "🔬", "Ongoing Research"],
             ["publications", "📚", "Publications"],
             ["posters", "🧾", "Posters"],
             ["clips", "🎥", "Academic Clips"],
             ["neuroart", "🎨", "NeuroArt"],
+            ["gallery", "📸", "Photo Gallery"],
           ].map(([key, icon, label]) => (
             <div
               key={key}
@@ -124,14 +124,6 @@ export default function Home() {
 
               {activeSection === key && (
                 <div className="border-t border-slate-800 p-6 sm:p-8">
-                  {key === "about" && (
-                    <p className="max-w-5xl leading-8 text-slate-300">
-                      This section summarizes my professional journey,
-                      advanced neuroimaging background, clinical service
-                      development, and academic interests.
-                    </p>
-                  )}
-
                   {key === "research" && (
                     <section>
                       <h2 className="text-2xl font-bold sm:text-3xl">
@@ -332,6 +324,29 @@ export default function Home() {
                         >
                           View NeuroArt PDF
                         </a>
+                      </div>
+                    </section>
+                  )}
+
+                  {key === "gallery" && (
+                    <section>
+                      <h2 className="text-2xl font-bold sm:text-3xl">
+                        Photo Gallery
+                      </h2>
+
+                      <p className="mt-5 max-w-5xl leading-8 text-slate-300">
+                        A curated visual space for selected professional
+                        photographs with colleagues, team members, and
+                        collaborators, capturing moments from clinical practice,
+                        multidisciplinary teamwork, scientific meetings,
+                        educational workshops, and advanced neuroimaging
+                        activities.
+                      </p>
+
+                      <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-950 p-6">
+                        <p className="text-slate-400">
+                          Gallery images will be added soon.
+                        </p>
                       </div>
                     </section>
                   )}

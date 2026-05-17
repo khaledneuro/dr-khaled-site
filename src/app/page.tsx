@@ -374,7 +374,7 @@ export default function Home() {
         key={i}
         src={src}
         alt={`Gallery photo ${number}`}
-        className="mb-6 w-full break-inside-avoid rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
+        className="mb-6 w-full max-h-[520px] break-inside-avoid rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
       />
     );
   })}

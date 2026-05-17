@@ -346,7 +346,7 @@ export default function Home() {
 
   </div>
 </div>
-                   </section>
+                                   </section>
                   )}
 
                   {key === "gallery" && (
@@ -364,24 +364,21 @@ export default function Home() {
                         activities.
                       </p>
 
-                    <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-  {Array.from({ length: 60 }, (_, i) => {
-    const number = String(i + 1).padStart(2, "0");
-    const src = `/gallery/gallery-${number}.jpeg`;
+                      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        {Array.from({ length: 60 }, (_, i) => {
+                          const number = String(i + 1).padStart(2, "0");
+                          const src = `/gallery/gallery-${number}.jpeg`;
 
-    return (
-      <img
-        key={i}
-        src={src}
-        alt={`Gallery photo ${number}`}
-        className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
-      />
-    );
-  })}
-</div>
-    );
-  })}
-</div>
+                          return (
+                            <img
+                              key={i}
+                              src={src}
+                              alt={`Gallery photo ${number}`}
+                              className="w-full rounded-2xl object-contain shadow-md transition duration-300 hover:scale-105"
+                            />
+                          );
+                        })}
+                      </div>
                     </section>
                   )}
                 </div>

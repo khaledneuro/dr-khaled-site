@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import profilePic from "../assets/profile-new2.jpeg";
+import profileNew from "../assets/profile-new2.png";
 import fcdFig from "../assets/research/fcd.png";
 import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";
@@ -27,7 +27,7 @@ export default function Home() {
             </p>
 
             <Image
-  src={profilePic}
+  src={profileNew}
   alt="Dr Khaled Gad"
  className="mb-6 h-[380px] w-[320px] rounded-3xl object-cover object-top shadow-2xl"
   priority

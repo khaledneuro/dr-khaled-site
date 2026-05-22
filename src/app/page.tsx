@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import profileNew from "../assets/profile-new3.png";
+import profileNew from "../assets/profile-new4.png";
 import fcdFig from "../assets/research/fcd.png";
 import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";

@@ -399,13 +399,12 @@ export default function Home() {
   </a>{" "}
   (preferred)
 </p>
-<p className="mt-2">
+<p className="mt-0">
   or{" "}
   <a
     href="mailto:khagad@moh.gov.kw"
     className="text-cyan-300 hover:underline"
-  >    khagad@moh.gov.kw
-   
+  >    khagad@moh.gov.kw   
   </a>
 </p>
         </div>

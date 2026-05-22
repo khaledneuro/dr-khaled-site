@@ -28,7 +28,7 @@ export default function Home() {
             </p>
 
           <Image
-  src="/assets/profile-new3.png?v=3"
+  src="/assets/profile-new3.png"
   alt="Dr Khaled Gad"
   width={340}
   height={420}

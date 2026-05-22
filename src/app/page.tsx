@@ -27,8 +27,8 @@ export default function Home() {
               Consultant Neuroradiologist
             </p>
 
-          <Image
-  src="/assets/profile-new3.png"
+        <Image
+  src="/assets/profile-new4.png"
   alt="Dr Khaled Gad"
   width={340}
   height={420}

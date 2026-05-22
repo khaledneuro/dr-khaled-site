@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import profileNew from "../assets/profile-new2.png";
+import profileNew from "../assets/profile-new3.png";
 import fcdFig from "../assets/research/fcd.png";
 import boldFig from "../assets/research/bold.png";
 import ariaFig from "../assets/research/aria.png";
@@ -26,13 +26,12 @@ export default function Home() {
               Consultant Neuroradiologist
             </p>
 
-            <Image
-  src={profileNew}
+           <Image
+  src={profileNew3}
   alt="Dr Khaled Gad"
- className="mb-6 h-[380px] w-[320px] rounded-3xl object-cover object-top shadow-2xl"
+  className="mb-6 h-[420px] w-[340px] rounded-3xl object-cover object-top shadow-2xl"
   priority
 />
-
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Dr Khaled Gad
             </h1>
